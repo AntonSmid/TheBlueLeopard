@@ -18,6 +18,18 @@ black: rgba(15, 15, 15, 0.74)
 body {
   font-size: 19px;
   font-family: 'Alegreya', serif;
+  color: rgb(226, 226, 226);
+  background: rgb(15, 15, 15);
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 2% 6% 6% 6%;
+}
+
+.container {
+  background-color: rgba(15, 15, 15, 0.74);
+  padding: 30px;
 }
 
 h1, h2, h3 {
@@ -71,6 +83,57 @@ a:link {
   a:active {
     color: rgb(252, 217, 142);
   }
+
+
+/* ----------------------------------------------------------
+            Logo Styles
+------------------------------------------------------------*/
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+/* ----------------------------------------------------------
+            Main Navigation Styles
+------------------------------------------------------------*/
+.main-navigation ul {
+  padding-left: 0;
+  
+}
+
+.main-navigation li {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: rgba(67, 67, 67, 0.17);
+  color: rgb(180, 180, 180);
+}
+
+.main-navigation a:visited {
+  color: rgb(106, 106, 106);
+}
+
+.main-navigation a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.5s color;
+}
+
+.main-navigation a:active {
+  color: rgb(172, 140, 71);
+}
 
 /* ----------------------------------------------------------
             Global Footer Styles
