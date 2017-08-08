@@ -88,6 +88,7 @@ a:link {
 
 .button {
   background-color: rgb(172, 148, 71);
+  border-radius: 8px;
 }
 
 .button a {
@@ -95,8 +96,34 @@ a:link {
   text-decoration: none;
   font-style: normal;
   text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
 }
 
+.button a:hover {
+  background-color: rgb(119, 97, 48);
+  border-radius: 8px;
+}
+
+
+.featured-info h3 {
+  border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.featured-info p {
+  font-style: italic;
+}
+
+.featured-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.gallery {
+  margin-top: 30px;
+  
+}
 /* ----------------------------------------------------------
             Logo Styles
 ------------------------------------------------------------*/
@@ -149,20 +176,14 @@ a:link {
 }
 
 /* ----------------------------------------------------------
-            Home Page Styles
+            Menu Page Styles
 ------------------------------------------------------------*/
-.featured-info h3 {
-  border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.featured-info {
+.menu-page .featured-info ul{
   font-style: italic;
+  
 }
 
-.featured-info ul {
-  list-style: none;
-  padding-left: 0;
-}
+
 
 /* ----------------------------------------------------------
             Global Footer Styles
