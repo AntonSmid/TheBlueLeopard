@@ -71,6 +71,11 @@ p {
   margin-top: 1.42em;
   margin-bottom: 0;
   font-weight: 100;
+  max-width: 700px;
+}
+
+li {
+   font-weight: 100;
 }
 
 img {
@@ -96,6 +101,7 @@ a:link {
 .button {
   background-color: rgb(172, 148, 71);
   border-radius: 8px;
+  max-width: 250px;
 }
 
 .button a {
@@ -127,14 +133,56 @@ a:link {
   padding-left: 0;
 }
 
+
+@media screen and (min-width: 1050px) {
+  .featured-info {
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+  }
+}
+
 .gallery {
   margin-top: 30px;
+  
+}
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    width: 446px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .gallery img {
+    max-width: 220px;
+    
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .gallery {
+    width: 566px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .gallery img {
+    max-width: 280px;
+    
+  }
 }
 
 @media screen and (min-width: 750px) {
   .landing{
     text-align: center;
   }
+  
+  .landing p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 /* ----------------------------------------------------------
             Logo Styles
@@ -231,6 +279,15 @@ a:link {
   
 }
 
+.menu-page .featured-info {
+  float: none;
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 
 
 /* ----------------------------------------------------------
@@ -239,6 +296,7 @@ a:link {
 
 footer {
   padding: 10px 0;
+  clear: both;
 }
 
 footer h4 {
